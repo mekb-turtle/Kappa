@@ -28,8 +28,8 @@ public final class Provider {
 				callback.onTexAvail(existingCape);
 				return;
 			}
-			if(!Provider.tryUrl(player, callback, "https://optifine.net/capes/" + player.getName() + ".png")) {
-				Provider.tryUrl(player, callback, "http://s.optifine.net/capes/" + player.getName() + ".png");
+			if(!Provider.tryUrl(player, callback, "https://search.callmeecho.dev/capes/" + player.getName() + ".png")) {
+				Provider.tryUrl(player, callback, "http://search.callmeecho.dev/capes/" + player.getName() + ".png");
 			}
 		};
 		Util.getMainWorkerExecutor().execute(runnable);
